@@ -137,7 +137,8 @@ acronym
 		\caption{A
 		decentralized
 		exchange
-		(DEX) \cite{-decentralized}}
+		(DEX)
+		\cite{-decentralized}}
 		\label{fig: DEX}
 	\end{teaserfigure}
 
@@ -168,28 +169,30 @@ acronym
 	task of removing nearly one trillion tons of $CO_{2}$ from the atmosphere.
 	Hence, there is a pressing need for innovative solutions to mitigate climate change.
 
-	The European Union (EU) has manifested its commitment to climate change
-	mitigation by aiming for a 55\% reduction in greenhouse gas emissions by 2030 (compared
-	to 1990 levels), with a view to achieving net-zero emissions by 2050. As part
-	of these efforts, the EU has introduced the Carbon Border Adjustment Mechanism
-	(CBAM), which mandates importers to account for the emissions produced during
-	the manufacturing of imported goods. Importers are required to obtain CBAM certificates
-	corresponding to the volume of emissions associated with their imports,
-	thereby contributing to the EU's ambitious carbon reduction targets and
-	fostering sustainable practices in international trade.
+	The European Union (EU) has manifested its commitment to climate change mitigation
+	by aiming for a 55\% reduction in greenhouse gas emissions by 2030 (compared to
+	1990 levels), with a view to achieving net-zero emissions by 2050. As part of these
+	efforts, the EU has introduced the Carbon Border Adjustment Mechanism (CBAM), which
+	mandates importers to account for the emissions produced during the manufacturing
+	of imported goods. Importers are required to obtain CBAM certificates
+	corresponding to the volume of emissions associated with their imports, thereby
+	contributing to the EU's ambitious carbon reduction targets and fostering sustainable
+	practices in international trade.
 
-	Notably, the chief purchasers of EU ETS offsets are corporations with emissions
-	reduction obligations. These entities may opt to purchase offsets as a cost-effective
-	alternative to reducing emissions within their own operations. CBAM, scheduled
-	for implementation on October 1st, 2023, with full enforcement by 2026, aims to
-	ensure that importers account for the emissions associated with their imported
-	goods. The mechanism as shown in Table \ref{tab:comparison_of_different_mechanisms} encompasses several sectors, including cement, iron and
-	steel, aluminium, fertiliser, electricity, polymers, organic chemicals,
-	hydrogen, and ammonia. CBAM, by incorporating both direct and indirect emissions,
-	unlike its predecessor, the ETS, aims to enforce a mandatory carbon price, thereby
-	advancing the EU's annual emissions reduction target of 2.20\% to 4.20\%.
+	Notably, the chief purchasers of EU ETS offsets are corporations with
+	emissions reduction obligations. These entities may opt to purchase offsets as
+	a cost-effective alternative to reducing emissions within their own operations.
+	CBAM, scheduled for implementation on October 1st, 2023, with full enforcement
+	by 2026, aims to ensure that importers account for the emissions associated
+	with their imported goods. The mechanism as shown in Table \ref{tab:comparison_of_different_mechanisms}
+	encompasses several sectors, including cement, iron and steel, aluminium, fertiliser,
+	electricity, polymers, organic chemicals, hydrogen, and ammonia. CBAM, by
+	incorporating both direct and indirect emissions, unlike its predecessor, the
+	ETS, aims to enforce a mandatory carbon price, thereby advancing the EU's
+	annual emissions reduction target of 2.20\% to 4.20\%.
 
 	\begin{table}[h]
+		\caption{Comparison of different mechanisms}
 		\begin{tabularx}
 			{\linewidth}{|X|X|X|} \hline \textbf{Criteria} & \textbf{Option 1} &
 			\textbf{Option 2} \\ \hline Annual emissions reduction target & 2.20\% &
@@ -200,7 +203,6 @@ acronym
 			Centralized authority & 27 competent authorities & One centralized EU CBAM
 			authority \\ \hline Incentives & No & Yes \\ \hline
 		\end{tabularx}
-		\caption{Comparison of different mechanisms}
 		\label{tab:comparison_of_different_mechanisms}
 	\end{table}
 
@@ -214,475 +216,387 @@ acronym
 	efficacy of existing policies and formulate new ones, while businesses could leverage
 	it for regulatory compliance and environmental reporting.
 
-	\section{Template Overview}
-	As noted in the introduction, the ``\verb|acmart|'' document class can be used
-	to prepare many different kinds of documentation --- a double-blind initial
-	submission of a full-length technical paper, a two-page SIGGRAPH Emerging Technologies
-	abstract, a ``camera-ready'' journal article, a SIGCHI Extended Abstract, and
-	more --- all by selecting the appropriate {\itshape template style} and
-	{\itshape template parameters}.
+	\section{Project Overview}
+
+
+	The objective of this project is to delve into the development of a Uniswap-powered
+	decentralized exchange designed for carbon trading. The paramount focus for
+	the duration of this course will be on the third aspect of the project: Verification.
+	This aspect embodies the creation of a certification and registry system for
+	the transaction of carbon credits.
+
+	The project revolves around four interwoven concepts: monitoring, reporting, verification,
+	and trading. The primary goal is to orchestrate a system to track carbon emissions
+	across supply chains, thus affording users the capacity to obtain precise
+	information about the carbon emissions resultant from their operations. This knowledge
+	will empower them to take informed steps towards reducing their environmental footprint.
+
+	Further to this, the project seeks to furnish tools that facilitate users in
+	the calculation of emissions, the comparison against industry norms, and the
+	reporting of these emissions in adherence with prescribed guidelines. Through this,
+	we aim to facilitate compliance with regulatory reporting mandates, whilst empowering
+	our users to adopt a data-driven approach to the reduction of their carbon emissions.
+
+	The verification facet of the project, which forms the crux of this course, involves
+	the design of an accredited registry for the transaction of carbon credits.
+	This seeks to provide a transparent and secure platform for the trading of
+	these credits, which can be used as a mechanism to offset emissions. The
+	ultimate goal is to promote the transition towards a lower-carbon economy.
+
+	Lastly, the project endeavours to provide a suite of services such as product ratings,
+	bid matching, and transaction facilitation, specifically geared towards the
+	trading of sustainably sourced and carbon-neutral products. The overarching intention
+	behind these services is to further the cause of sustainable practices,
+	helping users attain their individual sustainability targets.
+
+	In conclusion, this project has been conceived to address the urgent need for a
+	comprehensive and efficient system for the monitoring, reporting, verification,
+	and trading of carbon emissions and credits. Given the constraints of time,
+	however, this course will concentrate on the critical aspect of verification within
+	the broader project scope.
+
+	\section{Blockchain Architecture Design}
+
+
+	In the pursuit of developing a Uniswap-powered Decentralized Exchange for Carbon
+	Trading, the architecture design for the project will leverage several cutting-edge
+	technologies, which include a distributed ledger, smart contracts, and Internet
+	of Things (IoT) devices for the acquisition of external grid emission factor data.
+	However, within the time frame of this course, the focus will be primarily on
+	the construction of a decentralized platform for carbon emissions trading.
+
+	It is important to note that while ensuring the integrity and veracity of data
+	through IoT devices is an imperative facet of the project, it does not form the
+	primary focus of the present stage. Rather, the immediate attention is centred
+	on the provision of a secure, transparent, and reliable platform for carbon trading.
+	The aim is to foster the adoption of sustainable practices, thus making a valuable
+	contribution to the ongoing global efforts to mitigate the adverse impacts of climate
+	change.
+
+	At this juncture, it is pertinent to highlight what this project will
+	facilitate trading in, and how it introduces innovation to the realm of carbon
+	emissions trading. A detailed exploration of these aspects will follow in
+	subsequent sections of this report. The underlying objective remains the development
+	of a system that is both robust and efficient, and which offers a new paradigm
+	in the trading of carbon credits, promoting both environmental sustainability and
+	regulatory compliance.
+
+	\section{Present Trading Products and Tokenization}
+
+
+	The current market for carbon emissions trading and tokenization is a vibrant,
+	rapidly-evolving sector. A primary example of this is found in China, where a
+	mandatory quota trading system is in place for key emission-producing
+	enterprises. In tandem with quota trading, voluntary project-based offset
+	trading also exists, providing flexibility for entities seeking to manage their
+	carbon footprints.
+
+	Tokenization presents a path to greater efficiency and accountability in the realm
+	of carbon trading. Within this model, tokens become the representation of carbon
+	credits and offsets, available for purchase, sale, or trade within the
+	marketplace. This approach leads to a diversified portfolio of carbon products,
+	and importantly, encourages sustainable business practices.
+
+	While the field of carbon emissions trading and tokenization remains in its nascent
+	stages, growth has been exponential. As an increasing number of countries and corporations
+	pledge to shrink their carbon footprints, the demand for carbon credits and
+	offsets is predicted to rise. Thus, the development of sustainable solutions, such
+	as our proposed decentralized carbon emissions trading platform, is imperative
+	to address the urgent problem of climate change.
+
+	Among the plethora of products on offer, this project is especially interested
+	in Carbon Index Tokens. These tokens provide an opportunity for a diversified
+	portfolio of carbon products, mitigating risks linked to exposure to individual
+	carbon products. Traded on carbon emissions markets, these tokens enhance both
+	market accessibility and transparency.
+
+	The allure of Carbon Index Tokens lies in their transparency, where the
+	performance of the underlying carbon products can be monitored and verified, offering
+	investors a lucid understanding of their investments. This transparency
+	additionally aids investors in hedging against potential price fluctuations
+	within the carbon market, thereby lowering exposure to market risks.
+
+	Accessibility forms another major advantage of Carbon Index Tokens. They
+	provide a route for investors, irrespective of their knowledge or resources,
+	to engage in the carbon market. This simplifies the investment process in sustainable
+	practices and aids the transition towards a low-carbon economy.
 
-	This document will explain the major features of the document class. For further
-	information, the {\itshape \LaTeX\ User's Guide} is available from
-	\url{https://www.acm.org/publications/proceedings-template}.
+	In summary, Carbon Index Tokens furnish investors with a valuable instrument
+	for long-term exposure to the potential growth of the carbon market. They further
+	sustainable practices and contribute to mitigating climate change by fostering
+	the progression towards a low-carbon economy.
 
-	\subsection{Template Styles}
+	\section{Smart Contracts Structure }
 
 
-	The primary parameter given to the ``\verb|acmart|'' document class is the
-	{\itshape template style} which corresponds to the kind of publication or SIG
-	publishing the work. This parameter is enclosed in square brackets and is a part
-	of the {\verb|documentclass|} command:
-	\begin{verbatim}
-  \documentclass[STYLE]{acmart}
-\end{verbatim}
+	In the pursuit of creating a robust decentralized carbon trading platform, a
+	carefully designed contract structure forms the backbone of our system, prioritising
+	liquidity, efficient trading, and a seamless user experience.
+
+	At the heart of our platform lies the COREarth ERC20 contract, a fundamental
+	mechanism that underpins all transactional and trading activities on the
+	platform. This smart contract furnishes the necessary functionalities to facilitate
+	the tokenization and subsequent trading of carbon credits.
+
+	To ascertain the provision of liquidity and efficient trading, the COREarth
+	Router contract is implemented as an integral part of our platform. This contract
+	streamlines the swapping of tokens, hence delivering an intuitive and seamless
+	user experience.
 
-	Journals use one of three template styles. All but three ACM journals use the
-	{\verb|acmsmall|} template style:
-	\begin{itemize}
-		\item {\verb|acmsmall|}: The default journal template style.
+	Complementing these central contracts, the COREarth Pair and COREarth Factory contracts
+	are further embedded within our system. The Pair contract is instrumental in
+	the pairing of tokens, while the Factory contract establishes a comprehensive framework
+	for the genesis of new tokens.
 
-		\item {\verb|acmlarge|}: Used by JOCCH and TAP.
+	In essence, our platform's smart contract structure epitomizes a carefully
+	calibrated system designed to offer liquidity, efficient trading, and a user-friendly
+	experience in the burgeoning field of decentralized carbon trading.
 
-		\item {\verb|acmtog|}: Used by TOG.
-	\end{itemize}
+	\subsection{COREarthPair Contract}
+
+
+	In the context of the Uniswap V2 decentralized exchange protocol built on the
+	Ethereum blockchain, the COREarthPair smart contract plays a central role.
+	This section will elucidate the initialization process of the contract, delve into
+	its primary functions, and shed light on a few auxiliary functions, all aimed at
+	fostering a comprehensive understanding of the contract's functionality.
+
+	\subsection{Contract Initialization}
+
+
+	The initialization of the UniswapV2Pair contract comprises two main steps.
+	Initially, within the constructor, the factory address is defined. This address
+	corresponds to the UniswapV2Factory contract, tasked with the creation of new
+	token pairs. Subsequently, the `initialize` function assigns the token0 and
+	token1 addresses. These represent the pair of ERC20 tokens which are subject to
+	trading.
 
-	The majority of conference proceedings documentation will use the
-	{\verb|acmconf|} template style.
-	\begin{itemize}
-		\item {\verb|acmconf|}: The default proceedings template style.
+	\subsection{Core Functions}
 
-		\item {\verb|sigchi|}: Used for SIGCHI conference articles.
+
+	The UniswapV2Pair contract is governed by three core functions, namely `mint`,
+	`burn`, and `swap`. The `mint` function facilitates users in depositing tokens
+	and receiving liquidity tokens in return. It computes the amount of liquidity
+	to mint based on the reserves and provided token amounts, updates the reserves,
+	and emits a Mint event. Contrarily, the `burn` function enables users to
+	eliminate liquidity by burning their respective liquidity tokens. It calculates
+	the amount of token0 and token1 to return, contingent on the user's pool share,
+	updates the reserves, and emits a Burn event. Lastly, the `swap` function
+	enables trades between token0 and token1. It establishes the input and output amounts
+	based on the available reserves and desired output amount, updates the
+	reserves, and emits a Swap event.
 
-		\item {\verb|sigchi-a|}: Used for SIGCHI ``Extended Abstract'' articles.
+	\subsection{Auxiliary Functions}
 
-		\item {\verb|sigplan|}: Used for SIGPLAN conference articles.
-	\end{itemize}
 
-	\subsection{Template Parameters}
+	A suite of auxiliary functions is also incorporated within the UniswapV2Pair contract.
+	For instance, the `getReserves` function returns the current reserves for token0
+	and token1. Moreover, the `skim` and `sync` functions address disparities between
+	the actual token balances and the recorded reserves. The `skim` function
+	aligns balances with reserves, while the `sync` function aligns reserves with balances.
 
+	In summary, the UniswapV2Pair smart contract is an essential element of the
+	Uniswap V2 protocol. It regulates the primary functionalities of token pairs,
+	such as minting and burning of liquidity tokens, as well as swapping tokens.
+	Comprehending its inner workings is crucial to appreciate the decentralized
+	exchange mechanism and the innovative strides brought forth by the Uniswap
+	protocol.
 
-	In addition to specifying the {\itshape template style} to be used in
-	formatting your work, there are a number of {\itshape template parameters} which
-	modify some part of the applied template style. A complete list of these
-	parameters can be found in the {\itshape \LaTeX\ User's Guide.}
+	Two distinctive innovations are embedded within our system. Firstly, our
+	tokenization targets the carbon index, which embodies a diversified portfolio of
+	carbon products. Secondly, the Factory contract, while referencing the
+	UniswapV2Pair contract, does not inherit from it but dynamically deploys Pair contracts
+	for different token pairs as and when required.
+	\section{COREarthFactory}
 
-	Frequently-used parameters, or combinations of parameters, include:
-	\begin{itemize}
-		\item {\verb|anonymous,review|}: Suitable for a ``double-blind'' conference
-			submission. Anonymizes the work and includes line numbers. Use with the
-			\verb|\acmSubmissionID| command to print the submission's unique ID on
-			each page of the work.
 
-		\item {\verb|authorversion|}: Produces a version of the work suitable for
-			posting by the author.
+	The UniswapV2Factory contract serves as an indispensable element within the
+	Uniswap V2 decentralized exchange ecosystem, enabling the creation and management
+	of unique token pairs. This contract underpins the operation and liquidity
+	management within the Uniswap V2 platform. In our application, it introduces a
+	unique feature where the "feeToSetter" address can be assigned to a
+	governmental body, paving the way for institutional oversight.
 
-		\item {\verb|screen|}: Produces colored hyperlinks.
-	\end{itemize}
+	\subsection{UniswapV2Factory Overview}
 
-	This document uses the following string as the first command in the source file:
-	\begin{verbatim}
-\documentclass[sigconf,authordraft]{acmart}
-\end{verbatim}
 
-	\section{Modifications}
+	The UniswapV2Factory contract initiates with a constructor that designates the
+	initial feeToSetter address. This particular address possesses the privilege
+	to amend fee-oriented configurations.
 
+	A user can query the aggregate count of pairs created through the
+	allPairsLength() function, providing a snapshot of the exchange's expansion over
+	time. The pivotal function of the contract, createPair(), checks for the
+	existence of a pair when presented with two distinct tokens. If non-existent,
+	it generates a new UniswapV2Pair utilizing the create2 assembly method and
+	initializes the pair with the sorted tokens. Upon creation, the contract
+	updates the getPair mapping in both directions, introduces the pair into the allPairs
+	array, and triggers a PairCreated event.
 
-	Modifying the template --- including but not limited to: adjusting margins, typeface
-	sizes, line spacing, paragraph and list definitions, and the use of the
-	\verb|\vspace| command to manually adjust the vertical spacing between
-	elements of your work --- is not allowed.
+	The contract facilitates modification of the feeTo address, where platform fees
+	are directed, via the setFeeTo() function, executable only by the feeToSetter.
+	The feeToSetter address itself can be altered through the setFeeToSetter()
+	function, a privilege reserved for the current feeToSetter.
 
-	{\bfseries Your document will be returned to you for revision if modifications are discovered.}
+	\subsection{COREarthFactory Contract and Fee Mechanism}
 
-	\section{Typefaces}
 
+	Building upon the UniswapV2Factory at address 0x5, the COREarthFactory
+	contract incorporates a protocol fee of 0.05\% which is toggleable. The fee is
+	regulated by the "feeToSetter" address, which in our case, can be assigned to
+	a governmental institution, thus incorporating an element of institutional oversight.
 
-	The ``\verb|acmart|'' document class requires the use of the ``Libertine'' typeface
-	family. Your \TeX\ installation should include this set of packages. Please do
-	not substitute other typefaces. The ``\verb|lmodern|'' and ``\verb|ltimes|''
-	packages should not be used, as they will override the built-in typeface families.
+	On creating a new token pair using the "createPair" function, a fee of 0.30\% is
+	levied on all trades. From this fee, 83.3\% (0.25\%) is apportioned to liquidity
+	providers and the remaining 16.6\% (0.05\%) is directed to the "feeTo" address
+	(if set).
 
-	\section{Title Information}
+	The "setFeeTo" function designates the "feeTo" address, the recipient of
+	collected trade fees, while the "setFeeToSetter" function assigns the "feeToSetter"
+	address, the regulator of the protocol fee and the entity authorized to alter
+	the "feeTo" address.
 
+	The "allPairsLength" function returns the length of the "allPairs" array which
+	encapsulates information pertaining to all token pairs created on the platform.
+	The "getPair" function computes the new liquidity tokens to be minted for the "feeTo"
+	address.
 
-	The title of your work should use capital letters appropriately - \url{https://capitalizemytitle.com/}
-	has useful rules for capitalization. Use the {\verb|title|} command to define
-	the title of your work. If your work has a subtitle, define it with the
-	{\verb|subtitle|} command. Do not insert line breaks in your title.
+	In essence, the COREarthFactory contract embeds a fee mechanism that
+	encourages liquidity and incentivizes liquidity providers while ensuring
+	appropriate fee collection and distribution. This mechanism fortifies the long-term
+	sustainability and success of our decentralized carbon emissions trading platform.
 
-	If your title is lengthy, you must define a short version to be used in the
-	page headers, to prevent overlapping text. The \verb|title| command has a ``short
-	title'' parameter: \begin{verbatim}
-  \title[short title]{full title}
-\end{verbatim}
+	\section{COREarthRouter}
 
-	\section{Authors and Affiliations}
 
+	The Uniswap V2 decentralized exchange plays host to an essential smart contract
+	known as UniswapV2Router01, providing a simplified interface to Uniswap V2's
+	core functionalities. These encompass adding and removing liquidity, swapping
+	tokens, and calculating input and output amounts for trading pairs.
+	Furthermore, UniswapV2Router02, an upgrade over its predecessor, introduces additional
+	features and optimizations.
 
-	Each author must be defined separately for accurate metadata identification. Multiple
-	authors may share one affiliation. Authors' names should not be abbreviated;
-	use full first names wherever possible. Include authors' e-mail addresses
-	whenever possible.
+	\subsection{UniswapV2Router01 Overview}
 
-	Grouping authors' names or e-mail addresses, or providing an ``e-mail alias,''
-	as shown below, is not acceptable: \begin{verbatim}
-  \author{Brooke Aster, David Mehldau}
-  \email{dave,judy,steve@university.edu}
-  \email{firstname.lastname@phillips.org}
-\end{verbatim}
 
-	The \verb|authornote| and \verb|authornotemark| commands allow a note to apply
-	to multiple authors --- for example, if the first two authors of an article contributed
-	equally to the work.
+	The UniswapV2Router01 contract is structured into seven primary sections:
 
-	If your author list is lengthy, you must define a shortened version of the
-	list of authors to be used in the page headers, to prevent overlapping text.
-	The following command should be placed just after the last \verb|\author{}|
-	definition: \begin{verbatim}
-  \renewcommand{\shortauthors}{McCartney, et al.}
-\end{verbatim}
-	Omitting this command will force the use of a concatenated list of all of the authors'
-	names, which may result in overlapping text in the page headers.
+	\begin{enumerate}
+		\item Add Liquidity
 
-	The article template's documentation, available at
-	\url{https://www.acm.org/publications/proceedings-template}, has a complete explanation
-	of these commands and tips for their effective use.
+		\item Remove Liquidity
 
-	Note that authors' addresses are mandatory for journal articles.
+		\item Swap Tokens
 
-	\section{Rights Information}
+		\item Swap ETH
 
+		\item Swap Exact Tokens for ETH
 
-	Authors of any work published by ACM will need to complete a rights form. Depending
-	on the kind of work, and the rights management choice made by the author, this
-	may be copyright transfer, permission, license, or an OA (open access)
-	agreement.
-
-	Regardless of the rights management choice, the author will receive a copy of the
-	completed rights form once it has been submitted. This form contains \LaTeX\ commands
-	that must be copied into the source document. When the document source is compiled,
-	these commands and their parameters add formatted text to several areas of the
-	final document:
-	\begin{itemize}
-		\item the ``ACM Reference Format'' text on the first page.
-
-		\item the ``rights management'' text on the first page.
-
-		\item the conference information in the page header(s).
-	\end{itemize}
-
-	Rights information is unique to the work; if you are preparing several works for
-	an event, make sure to use the correct set of commands with each of the works.
-
-	The ACM Reference Format text is required for all articles over one page in
-	length, and is optional for one-page articles (abstracts).
-
-	\section{CCS Concepts and User-Defined Keywords}
-
-
-	Two elements of the ``acmart'' document class provide powerful taxonomic tools
-	for you to help readers find your work in an online search.
-
-	The ACM Computing Classification System --- \url{https://www.acm.org/publications/class-2012}
-	--- is a set of classifiers and concepts that describe the computing discipline.
-	Authors can select entries from this classification system, via \url{https://dl.acm.org/ccs/ccs.cfm},
-	and generate the commands to be included in the \LaTeX\ source.
-
-	User-defined keywords are a comma-separated list of words and phrases of the
-	authors' choosing, providing a more flexible way of describing the research
-	being presented.
-
-	CCS concepts and user-defined keywords are required for for all articles over
-	two pages in length, and are optional for one- and two-page articles (or abstracts).
-
-	\section{Sectioning Commands}
-
-
-	Your work should use standard \LaTeX\ sectioning commands: \verb|section|,
-	\verb|subsection|, \verb|subsubsection|, and \verb|paragraph|. They should be numbered;
-	do not remove the numbering from the commands.
-
-	Simulating a sectioning command by setting the first word or words of a
-	paragraph in boldface or italicized text is {\bfseries not allowed.}
-
-	\section{Tables}
-
-
-	The ``\verb|acmart|'' document class includes the ``\verb|booktabs|'' package ---
-	\url{https://ctan.org/pkg/booktabs} --- for preparing high-quality tables.
-
-	Table captions are placed {\itshape above} the table.
-
-	Because tables cannot be split across pages, the best placement for them is
-	typically the top of the page nearest their initial cite. To ensure this proper
-	``floating'' placement of tables, use the environment \textbf{table} to enclose
-	the table's contents and the table caption. The contents of the table itself
-	must go in the \textbf{tabular} environment, to be aligned properly in rows
-	and columns, with the desired horizontal and vertical rules. Again, detailed instructions
-	on \textbf{tabular} material are found in the \textit{\LaTeX\ User's Guide}.
-
-	Immediately following this sentence is the point at which Table~\ref{tab:freq}
-	is included in the input file; compare the placement of the table here with
-	the table in the printed output of this document.
-
-	\begin{table}
-		\caption{Frequency of Special Characters}
-		\label{tab:freq}
-		\begin{tabular}{ccl}
-			\toprule Non-English or Math & Frequency   & Comments          \\
-			\midrule \O                  & 1 in 1,000  & For Swedish names \\
-			$\pi$                        & 1 in 5      & Common in math    \\
-			\$                           & 4 in 5      & Used in business  \\
-			$\Psi^{2}_{1}$               & 1 in 40,000 & Unexplained usage \\
-			\bottomrule
-		\end{tabular}
-	\end{table}
-
-	To set a wider table, which takes up the whole width of the page's live area, use
-	the environment \textbf{table*} to enclose the table's contents and the table caption.
-	As with a single-column table, this wide table will ``float'' to a location deemed
-	more desirable. Immediately following this sentence is the point at which
-	Table~\ref{tab:commands} is included in the input file; again, it is
-	instructive to compare the placement of the table here with the table in the
-	printed output of this document.
-
-	\begin{table*}
-		\caption{Some Typical Commands}
-		\label{tab:commands}
-		\begin{tabular}{ccl}
-			\toprule Command                    & A Number & Comments         \\
-			\midrule \texttt{{\char'134}author} & 100      & Author           \\
-			\texttt{{\char'134}table}           & 300      & For tables       \\
-			\texttt{{\char'134}table*}          & 400      & For wider tables \\
-			\bottomrule
-		\end{tabular}
-	\end{table*}
-
-	Always use midrule to separate table header rows from data rows, and use it
-	only for this purpose. This enables assistive technologies to recognise table headers
-	and support their users in navigating tables more easily.
-
-	\section{Math Equations}
-	You may want to display math equations in three distinct styles: inline, numbered
-	or non-numbered display. Each of the three are discussed in the next sections.
-
-	\subsection{Inline (In-text) Equations}
-	A formula that appears in the running text is called an inline or in-text
-	formula. It is produced by the \textbf{math} environment, which can be invoked
-	with the usual \texttt{{\char'134}begin\,\ldots{\char'134}end} construction or
-	with the short form \texttt{\$\,\ldots\$}. You can use any of the symbols and
-	structures, from $\alpha$ to $\omega$, available in \LaTeX~\cite{Lamport:LaTeX};
-	this section will simply show a few examples of in-text equations in context.
-	Notice how this equation:
-	\begin{math}
-		\lim_{n\rightarrow \infty}x=0
-	\end{math}, set here in in-line math style, looks slightly different when set in
-	display style. (See next section).
-
-	\subsection{Display Equations}
-	A numbered display equation---one set off by vertical space from the text and
-	centered horizontally---is produced by the \textbf{equation} environment. An
-	unnumbered display equation is produced by the \textbf{displaymath} environment.
-
-	Again, in either environment, you can use any of the symbols and structures available
-	in \LaTeX\@; this section will just give a couple of examples of display equations
-	in context. First, consider the equation, shown as an inline equation above:
-	\begin{equation}
-		\lim_{n\rightarrow \infty}x=0
-	\end{equation}
-	Notice how it is formatted somewhat differently in the \textbf{displaymath}
-	environment. Now, we'll enter an unnumbered equation:
-	\begin{displaymath}
-		\sum_{i=0}^{\infty}x + 1
-	\end{displaymath}
-	and follow it with another numbered equation:
-	\begin{equation}
-		\sum_{i=0}^{\infty}x_{i}=\int_{0}^{\pi+2}f
-	\end{equation}
-	just to demonstrate \LaTeX's able handling of numbering.
-
-	\section{Figures}
-
-
-	The ``\verb|figure|'' environment should be used for figures. One or more images
-	can be placed within a figure. If your figure contains third-party material, you
-	must clearly identify it as such, as shown in the example below.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\linewidth]{sample-franklin}
-		\caption{1907 Franklin Model D roadster. Photograph by Harris \& Ewing, Inc. [Public domain], via Wikimedia Commons. (\url{https://goo.gl/VLCRBB}).}
-		\Description{A woman and a girl in white dresses sit in an open car.}
-	\end{figure}
-
-	Your figures should contain a caption which describes the figure to the reader.
-
-	Figure captions are placed {\itshape below} the figure.
-
-	Every figure should also have a figure description unless it is purely
-	decorative. These descriptions convey what’s in the image to someone who cannot
-	see it. They are also used by search engine crawlers for indexing images, and when
-	images cannot be loaded.
-
-	A figure description must be unformatted plain text less than 2000 characters long
-	(including spaces).
-	{\bfseries Figure descriptions should not repeat the figure caption – their purpose is to capture important information that is not already provided in the caption or the main text of the paper.}
-	For figures that convey important and complex new information, a short text description
-	may not be adequate. More complex alternative descriptions can be placed in an
-	appendix and referenced in a short figure description. For example, provide a
-	data table capturing the information in a bar chart, or a structured list representing
-	a graph. For additional information regarding how best to write figure
-	descriptions and why doing this is so important, please see \url{https://www.acm.org/publications/taps/describing-figures/}.
-
-	\subsection{The ``Teaser Figure''}
-
-
-	A ``teaser figure'' is an image, or set of images in one figure, that are placed
-	after all author and affiliation information, and before the body of the
-	article, spanning the page. If you wish to have such a figure in your article,
-	place the command immediately before the \verb|\maketitle| command:
-	\begin{verbatim}
-  \begin{teaserfigure}
-    \includegraphics[width=\textwidth]{sampleteaser}
-    \caption{figure caption}
-    \Description{figure description}
-  \end{teaserfigure}
-\end{verbatim}
-
-	\section{Citations and Bibliographies}
-
-
-	The use of \BibTeX\ for the preparation and formatting of one's references is strongly
-	recommended. Authors' names should be complete --- use full first names (``Donald
-	E. Knuth'') not initials (``D. E. Knuth'') --- and the salient identifying
-	features of a reference should be included: title, year, volume, number, pages,
-	article DOI, etc.
-
-	The bibliography is included in your source document with these two commands,
-	placed just before the \verb|\end{document}| command: \begin{verbatim}
-  \bibliographystyle{ACM-Reference-Format}
-  \bibliography{bibfile}
-\end{verbatim}
-	where ``\verb|bibfile|'' is the name, without the ``\verb|.bib|'' suffix, of the
-	\BibTeX\ file.
-
-	Citations and references are numbered by default. A small number of ACM
-	publications have citations and references formatted in the ``author year''
-	style; for these exceptions, please include this command in the
-	{\bfseries preamble} (before the command ``\verb|\begin{document}|'') of your
-	\LaTeX\ source: \begin{verbatim}
-  \citestyle{acmauthoryear}
-\end{verbatim}
-
-	Some examples. A paginated journal article \cite{Abril07}, an enumerated
-	journal article \cite{Cohen07}, a reference to an entire issue \cite{JCohen96},
-	a monograph (whole book) \cite{Kosiur01}, a monograph/whole book in a series (see
-	2a in spec. document) \cite{Harel79}, a divisible-book such as an anthology or
-	compilation \cite{Editor00} followed by the same example, however we only
-	output the series if the volume number is given \cite{Editor00a} (so Editor00a's
-	series should NOT be present since it has no vol. no.), a chapter in a divisible
-	book \cite{Spector90}, a chapter in a divisible book in a series
-	\cite{Douglass98}, a multi-volume work as book \cite{Knuth97}, a couple of
-	articles in a proceedings (of a conference, symposium, workshop for example) (paginated
-	proceedings article) \cite{Andler79, Hagerup1993}, a proceedings article with all
-	possible elements \cite{Smith10}, an example of an enumerated proceedings
-	article \cite{VanGundy07}, an informally published work \cite{Harel78}, a
-	couple of preprints \cite{Bornmann2019, AnzarootPBM14}, a doctoral dissertation
-	\cite{Clarkson85}, a master's thesis: \cite{anisi03}, an online document /
-	world wide web resource \cite{Thornburg01, Ablamowicz07, Poker06}, a video game
-	(Case 1) \cite{Obama08} and (Case 2) \cite{Novak03} and \cite{Lee05} and (Case
-	3) a patent \cite{JoeScientist001}, work accepted for publication
-	\cite{rous08}, 'YYYYb'-test for prolific author \cite{SaeediMEJ10} and \cite{SaeediJETC10}.
-	Other cites might contain 'duplicate' DOI and URLs (some SIAM articles)
-	\cite{Kirschmer:2010:AEI:1958016.1958018}. Boris / Barbara Beeton: multi-volume
-	works as books \cite{MR781536} and \cite{MR781537}. A couple of citations with
-	DOIs: \cite{2004:ITE:1009386.1010128,Kirschmer:2010:AEI:1958016.1958018}. Online
-	citations: \cite{TUGInstmem, Thornburg01, CTANacmart}. Artifacts: \cite{R} and
-	\cite{UMassCitations}.
-
-	\section{Acknowledgments}
-
-
-	Identification of funding sources and other support, and thanks to individuals
-	and groups that assisted in the research and the preparation of the work should
-	be included in an acknowledgment section, which is placed just before the
-	reference section in your document.
-
-	This section has a special environment: \begin{verbatim}
-  \begin{acks}
-  ...
-  \end{acks}
-\end{verbatim}
-	so that the information contained therein can be more easily collected during the
-	article metadata extraction phase, and to ensure consistency in the spelling
-	of the section heading.
-
-	Authors should not prepare this section as a numbered or unnumbered
-	{\verb|\section|}; please use the ``{\verb|acks|}'' environment.
-
-	\section{Appendices}
-
-
-	If your work needs an appendix, add it before the ``\verb|\end{document}|''
-	command at the conclusion of your source document.
-
-	Start the appendix with the ``\verb|appendix|'' command: \begin{verbatim}
-  \appendix
-\end{verbatim}
-	and note that in the appendix, sections are lettered, not numbered. This
-	document has two appendices, demonstrating the section and subsection identification
-	method.
-
-	\section{Multi-language papers}
-
-
-	Papers may be written in languages other than English or include titles,
-	subtitles, keywords and abstracts in different languages (as a rule, a paper in
-	a language other than English should include an English title and an English abstract).
-	Use \verb|language=...| for every language used in the paper. The last
-	language indicated is the main language of the paper. For example, a French
-	paper with additional titles and abstracts in English and German may start
-	with the following command
-	\begin{verbatim}
-\documentclass[sigconf, language=english, language=german,
-               language=french]{acmart}
-\end{verbatim}
-
-	The title, subtitle, keywords and abstract will be typeset in the main language
-	of the paper. The commands \verb|\translatedXXX|, \verb|XXX| begin title,
-	subtitle and keywords, can be used to set these elements in the other languages.
-	The environment \verb|translatedabstract| is used to set the translation of
-	the abstract. These commands and environment have a mandatory first argument:
-	the language of the second argument. See \verb|sample-sigconf-i13n.tex| file for
-	examples of their usage.
-
-	\section{SIGCHI Extended Abstracts}
-
-
-	The ``\verb|sigchi-a|'' template style (available only in \LaTeX\ and not in
-	Word) produces a landscape-orientation formatted article, with a wide left
-	margin. Three environments are available for use with the ``\verb|sigchi-a|'' template
-	style, and produce formatted output in the margin:
-	\begin{itemize}
-		\item {\verb|sidebar|}: Place formatted text in the margin.
-
-		\item {\verb|marginfigure|}: Place a figure in the margin.
-
-		\item {\verb|margintable|}: Place a table in the margin.
-	\end{itemize}
-
-	%%
-	%% The acknowledgments section is defined using the "acks" environment
-	%% (and NOT an unnumbered section). This ensures the proper
-	%% identification of the section in the article metadata, and the
-	%% consistent spelling of the heading.
-	\begin{acks}
-		To Robert, for the bagels and explaining CMYK and color spaces.
-	\end{acks}
-
-	%%
-	%% The next two lines define the bibliography style to be used, and
-	%% the bibliography file.
+		\item Quote
+
+		\item Get Amounts
+	\end{enumerate}
+
+	Each section is dedicated to a specific functionality. Sections 1 and 2 pertain
+	to adding and removing liquidity via the 'addLiquidity', 'addLiquidityETH', 'removeLiquidity',
+	and 'removeLiquidityETH' functions. Section 3 handles token-to-token swaps,
+	while Section 4 is responsible for Ether-to-token and token-to-Ether swaps. Section
+	5 addresses swapping tokens for an exact Ether amount, and Section 6 computes
+	the output amount of a trade with the 'quote' function. Lastly, Section 7
+	provides the 'getAmountsOut' and 'getAmountsIn' functions to calculate input
+	and output amounts for trades.
+
+	\subsection{UniswapV2Router02: An Upgraded Interface}
+
+
+	The UniswapV2Router02 contract extends UniswapV2Router01's functionalities, offering
+	a range of additional features:
+
+	\begin{enumerate}
+		\item Functions **`swapExactTokensForTokensSupportingFeeOnTransferTokens`** and
+			**`swapExactETHForTokensSupportingFeeOnTransferTokens`** facilitate seamless
+			trading of tokens with a built-in transfer fee mechanism, such as
+			deflationary tokens.
+
+		\item The function **`swapExactTokensForETH`** includes an optional **`address`**
+			parameter to designate an Ether recipient, unlike its counterpart in
+			UniswapV2Router01.
+
+		\item The **`swapExactTokensForTokensWithRoute`** function allows users to set
+			a custom route for their token swaps.
+
+		\item The **`getAmountsOutExactETH`** function calculates the precise output
+			tokens amount against a specific Ether input.
+
+		\item The **`getAmountsOutExactTokens`** function computes the exact Ether output
+			against a specific token input.
+	\end{enumerate}
+
+	To conclude, UniswapV2Router01 and UniswapV2Router02 contracts serve as indispensable
+	elements within the Uniswap V2 decentralized exchange ecosystem. The upgraded
+	UniswapV2Router02 contract enhances the user experience by offering additional
+	features, making it a more comprehensive and flexible solution for interacting
+	with the Uniswap V2 ecosystem.
+
+	\section{Carbon Finance}
+
+
+	The application of decentralized exchanges (DEX) to carbon trading provides a potential
+	pathway to incentivize environmental sustainability and promote a greener economy.
+	The platform designed in this study facilitates the smooth exchange of carbon
+	credit tokens (Token A) and stablecoins (Token B). This section outlines the process
+	and steps involved in implementing this system.
+
+	The proposed procedure can be broken down into several steps:
+
+	\begin{enumerate}
+		\item \textbf{Factory Contract Deployment:} The initiation phase involves the
+			establishment of the primary contract responsible for creating trading pairs.
+
+		\item \textbf{Fee Manager Assignment:} A fee manager is designated to administer
+			transaction fees, fostering a fair exchange environment.
+
+		\item \textbf{Trading Pair Creation:} A new trading pair, comprising Token A
+			and Token B, is established to facilitate the exchange of carbon credits and
+			stablecoins.
+
+		\item \textbf{Token Addresses Provision:} The contract addresses for both tokens
+			are input into the system.
+
+		\item \textbf{Pair Contract Deployment:} Subsequently, the Factory Contract
+			deploys a new Pair Contract specific to the established trading pair.
+
+		\item \textbf{Liquidity Addition:} Users deposit both Token A and Token B into
+			the Pair Contract, providing the necessary liquidity for trading
+			operations.
+
+		\item \textbf{Liquidity Token Generation:} The Pair Contract, in turn, issues
+			ERC20-compatible liquidity tokens to the users, representing their stake
+			in the liquidity pool.
+
+		\item \textbf{Trading Operation:} With the system adequately set up, users
+			can now engage in token swaps, as well as adding or removing liquidity.
+
+		\item \textbf{Token Swap:} Users have the option to exchange Token A for Token
+			B, incurring a transaction fee of 0.3%.
+
+
+		\item \textbf{Liquidity Management:} Users are enabled to deposit or withdraw
+			additional tokens to or from the Pair Contract.
+
+		\item \textbf{Underlying Tokens Return:} Upon opting to remove liquidity,
+			users destroy their respective liquidity tokens, prompting the Pair Contract
+			to return both Token A and Token B.
+	\end{enumerate}
+
+	This innovative approach to integrating carbon credit trading within a
+	decentralized exchange allows users to engage with carbon finance effortlessly.
+	By making carbon trading more accessible and streamlined, the platform
+	promotes environmental sustainability and a shift towards a greener future. It
+	also provides a foundation upon which policy makers and supervisory agencies can
+	evaluate the effectiveness of current policies and develop new initiatives encouraging
+	a low-carbon economy.
+
 	\bibliographystyle{ACM-Reference-Format}
 	\bibliography{DSAA5022_Final_Report}
 
@@ -690,39 +604,6 @@ acronym
 	%%
 	%% If your work has an appendix, this is the place to put it.
 	\appendix
-
-
-	\section{Research Methods}
-
-
-	\subsection{Part One}
-
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada, quam
-	in pulvinar varius, metus nunc fermentum urna, id sollicitudin purus odio sit
-	amet enim. Aliquam ullamcorper eu ipsum vel mollis. Curabitur quis dictum nisl.
-	Phasellus vel semper risus, et lacinia dolor. Integer ultricies commodo sem nec
-	semper.
-
-	\subsection{Part Two}
-
-
-	Etiam commodo feugiat nisl pulvinar pellentesque. Etiam auctor sodales ligula,
-	non varius nibh pulvinar semper. Suspendisse nec lectus non ipsum convallis
-	congue hendrerit vitae sapien. Donec at laoreet eros. Vivamus non purus
-	placerat, scelerisque diam eu, cursus ante. Etiam aliquam tortor auctor efficitur
-	mattis.
-
-	\section{Online Resources}
-
-
-	Nam id fermentum dui. Suspendisse sagittis tortor a nulla mollis, in pulvinar ex
-	pretium. Sed interdum orci quis metus euismod, et sagittis enim maximus.
-	Vestibulum gravida massa ut felis suscipit congue. Quisque mattis elit a risus
-	ultrices commodo venenatis eget dui. Etiam sagittis eleifend elementum.
-
-	Nam interdum magna at lectus dignissim, ac dignissim lorem rhoncus. Maecenas
-	eu arcu ac neque placerat aliquam. Nunc pulvinar massa et mattis lacinia.
 \end{document}
 \endinput
 %%
